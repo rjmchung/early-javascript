@@ -1,0 +1,68 @@
+
+
+var user = prompt ("You are working in the peds ortho research office when your boss asks you to write an abstract. Do you DO IT, SAY NO, CRY, or RUN?").toLowerCase();
+
+var zak = prompt ("Are you Zak? yes/no").toLowerCase();
+if (zak === "no") {
+    var nick = prompt ("Are you Nick? yes/no").toLowerCase();
+}
+if (nick === "yes") {
+    confirm ("You have no faults. Carry on.");
+}
+if (nick === "yes" || zak === "yes") {
+    confirm ("Play on.")
+}
+
+if (zak === "yes") {
+    switch (user) {
+        case "do it":
+            var user2 = prompt("You did it, but uh oh! Your boss refuses to give you credit on the paper. Do you QUIT, RETURN TO WORK, or DIE?").toLowerCase();
+            switch (user2) {
+                case "quit":
+                    confirm ("YOU CAN'T QUIT. YOU'RE STUCK HERE FOR LIFE. WELCOME TO HELL MUAHAHAHAHAHAHA")
+                    break;
+                case "return to work":
+                    confirm ("Congrats on being a lil' bitch");
+                    break;
+                case "die":
+                    confirm ("i am sorry you died")
+                    break;
+                default:
+                    confirm ("That's not an option. You die.")
+        }
+            break;
+        case "say no":
+            var user4 = prompt ("Are you ready for a fight? yes/no").toLowerCase();
+        
+            if (user4 === "yes") {
+                confirm ("You fought and died. I am sorry.")
+            } else {
+                confirm ("Then get back to work, you piece of human garbage.")
+            }
+            break;
+        case "cry":
+            confirm ("THERE IS NO CRYING IN PEDS ORTHO")
+            break;
+        case "run":
+            var user3 = prompt ("You're off and running. Do you go HOME, LUNCH, or to DR. ROYE'S OFFICE?").toLowerCase()
+            switch (user3) {
+                case "home":
+                    confirm ("While you're at it, why don't you mop the kitchen floor with your tears, you wimp?")
+                    break;
+                case "lunch":
+                    confirm ("Go get a sandwich")
+                    break;
+                case "dr. roye's office":
+                    confirm ("Tattle-tale.")
+                    break;
+                default:
+                    confirm ("That's not an option. You suck.")
+            }
+            break;
+        default:
+            confirm ("That is not an option. Your creativity has been squashed.")
+    }
+
+}  else if (zak === "no" && nick === "no") {
+    confirm ("You are irrelevant. Go away.")
+};
