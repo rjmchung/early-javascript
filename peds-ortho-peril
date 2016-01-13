@@ -1,6 +1,12 @@
+// This program plays a game with the user that simulates a typical day in 
+// the pediatric orthopedic research office where I work. The thoughts and 
+// opinions expressed in this program do not belong to the people featured 
+// in it, nor are they true to the programmer.
 
+var user = prompt ("You are working in the peds ortho research office when your \
+boss asks you to write an abstract. Do you DO IT, SAY NO, CRY, or RUN?").toLowerCase();
 
-var user = prompt ("You are working in the peds ortho research office when your boss asks you to write an abstract. Do you DO IT, SAY NO, CRY, or RUN?").toLowerCase();
+// The program determines whether the user is Zak or Nick or some other rando.
 
 var zak = prompt ("Are you Zak? yes/no").toLowerCase();
 if (zak === "no") {
@@ -9,14 +15,15 @@ if (zak === "no") {
 if (nick === "yes") {
     confirm ("You have no faults. Carry on.");
 }
-if (nick === "yes" || zak === "yes") {
-    confirm ("Play on.")
-}
+
+/ The program goes through the possible courses of action for Zak, most of which
+/ lead to utter misery.
 
 if (zak === "yes") {
     switch (user) {
         case "do it":
-            var user2 = prompt("You did it, but uh oh! Your boss refuses to give you credit on the paper. Do you QUIT, RETURN TO WORK, or DIE?").toLowerCase();
+            var user2 = prompt("You did it, but uh oh! Your boss refuses to give \
+            you credit on the paper. Do you QUIT, RETURN TO WORK, or DIE?").toLowerCase();
             switch (user2) {
                 case "quit":
                     confirm ("YOU CAN'T QUIT. YOU'RE STUCK HERE FOR LIFE. WELCOME TO HELL MUAHAHAHAHAHAHA")
