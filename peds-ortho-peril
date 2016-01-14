@@ -16,8 +16,8 @@ if (nick === "yes") {
     confirm ("You have no faults. Carry on.");
 }
 
-/ The program goes through the possible courses of action for Zak, most of which
-/ lead to utter misery.
+// The program goes through the possible courses of action for Zak, most of which
+// lead to utter misery.
 
 if (zak === "yes") {
     switch (user) {
